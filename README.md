@@ -8,6 +8,8 @@ Bookfinder is a command-line only app in JavaScript and Node that lets you searc
 
 Navigate into the project directory and run `$ npm install`.
 
+**Run tests with `$ npm test`**
+   
 ### Search for books
 
 To find a book by keyword and author use `$ node index.js find '<title> <author>'`, like so:
