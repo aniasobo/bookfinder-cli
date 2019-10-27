@@ -9,12 +9,6 @@
   "keywords": [],
   "author": "Anna Sobolewska",
   "license": "ISC",
-  "jest": {
-    "automock": false,
-    "setupFiles": [
-      "./setupJest.js"
-    ]
-  },
   "devDependencies": {
     "dotenv": "^8.2.0",
     "jest": "^24.9.0",
