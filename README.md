@@ -17,11 +17,11 @@ NOTE: current constraint is that both title and author must be single-word queri
 You should see the following results:
 
 ```
-1. Meridian by Alice Walker, published by Hachette UK
-2. Blood Meridian by Cormac McCarthy, published by Vintage
-3. Tables for azimuths, great circle sailing and reduction to the meridian by H. S. Blackburne, published by BoD – Books on Demand
-4. Meridian Exercise for Self-Healing Book 2 by Ilchi Lee, published by Healing Society
-5. Meridian Exercise For Self-Healing by Ilchi Lee, published by SCB Distributors
+1. Blood Meridian by Cormac McCarthy, published by Vintage
+2. Blood Meridian, Or, The Evening Redness in the West by Cormac McCarthy, published by Vintage
+3. Blood Meridian ; Or, The Evening Redness in the West by Cormac McCarthy, published by undefined
+4. Blood Meridian, Or, The Evening Redness in the West by Cormac McCarthy, published by Modern Library (Hardcover)
+5. I Meant to Kill Ye by Stephanie Reents, published by undefined
 ```
 
 To add one of those to your reading list, use the `add` command followed by the search queries you'd used and your chosen book's list position:
