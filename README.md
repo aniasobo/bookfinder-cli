@@ -43,6 +43,9 @@ $ node index.js add 'meridian mccarthy 1'
 * view it in the command line with `$ node index.js list` 
 * you can also open `reading-list.txt` file found in the project directory in your favourite text editor.
 
+## Demo
+
+![bookfinder demo screenshot](bookfinder-demo.png)
 ---
 
 ## Approach
@@ -51,4 +54,4 @@ My original plan was to use classic model-controller design with a separate UI c
 
 However, I really wanted to try the `commander` module for this, as it seemed like a useful tool for a simple Node CLI. In retrospect, my original design would've been better in terms of ease of testing and state management. I'm also not entirely happy with the usability - the commands are quite long and clunky to type, and it's easy to make a mistake.
 
-Due to the complexity of API and `fs` module mocking I haven't found a way to properly unit test the app as I'd ran out of time.
+Due to the complexity of API fetch and `fs` module mocking I haven't completed all my unit testing as I'd ran out of time, but I have a good idea for how to do this with Jest mocks.
