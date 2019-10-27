@@ -15,7 +15,7 @@ program
   .description('add selected book to reading list')
   .action(queries => addToList(queries)); 
 
-program // not sure why this isn't working
+program 
   .command("list")
   .alias('l')
   .description('view current reading list')
