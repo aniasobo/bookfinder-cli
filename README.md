@@ -27,7 +27,7 @@ You should see the following results:
 To add one of those to your reading list, use the `add` command followed by the search queries you'd used and your chosen book's list position:
 
 ```
-$ node index.js add 'meridian mccarthy 2'
+$ node index.js add 'meridian mccarthy 1'
 ```
 
 You can view your reading list in the `reading-list.txt` file found in the project directory.
