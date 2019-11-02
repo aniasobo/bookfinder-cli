@@ -2,8 +2,16 @@
 
 Bookfinder is a command-line only app in JavaScript and Node that lets you search for books and add them to a reading list.
 
-**NOTE:** to successfully run this app you need to use your own Google Books API key. Simply replace the KEY variable on top of the `commands.js` file before performing queries. Make sure your API key is a string, unless you're using a `dotenv`/environment variable.
+**NOTE:** to successfully run this app you need to use your own [Google Books API key](https://developers.google.com/books/docs/v1/using#APIKey). Once you got your key, you can use it in Bookfinder to make API calls. Here are the options:
 
+* replace the KEY variable on top of the `commands.js` file 
+* install dotenv by running `$ npm install dotenv`. Create your own `.env` file in the project directory, and add your API key in the file, like so: `BOOKS_KEY=rAnDoMcHaRaCtErSoFyOuRbOoKsApIkEy`
+* add it to your bash profile as an environment variable; that way you can use it in all your projects by calling the variable from any location. In your code editor, open `~/.bash_profile` and add the API key as an environment variable: 
+```
+export BOOKS_API="rAnDoMcHaRaCtErSoFyOuRbOoKsApIkEy"
+```
+          
+       
 ### Download or clone this repo. 
 
 Navigate into the project directory and run `$ npm install`.
@@ -12,13 +20,11 @@ Navigate into the project directory and run `$ npm install`.
    
 ### Search for books
 
-To find a book by keyword and author use `$ node index.js find '<title> <author>'`, like so:
+You can use any search terms you want to find books. To find a book by title and author use `$ node index.js find '<title> <author>'`, like so:
 
 ```
 $ node index.js find 'meridian mccarthy'
 ```
-
-**NOTE:** current constraint is that both title and author must be single-word queries.
 
 You should see the following results:
 
@@ -30,9 +36,11 @@ You should see the following results:
 5. I Meant to Kill Ye by Stephanie Reents, published by undefined
 ```
 
+You're free to use however many keywords for title, authors or both. Note that you'll only ever see top 5 results for the given queries.
+
 ### Choose a book to add to your reading list
 
-Use the `add` command followed by the search queries you'd used and your chosen book's list position:
+Use the `add` command, the search queries you'd used and your chosen book's list position:
 
 ```
 $ node index.js add 'meridian mccarthy 1'
