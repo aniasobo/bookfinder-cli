@@ -7,7 +7,7 @@ program
   .command("find <queries>")
   .alias('f')
   .description('look up a book by title and author')
-  .action(queries => fetchNow(queries));
+  .action(queries => fetchNow(queries, _getBooks));
 
 program
   .command("add <queries>")
