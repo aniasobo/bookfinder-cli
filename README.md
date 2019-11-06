@@ -62,4 +62,5 @@ $ node index.js add 'meridian mccarthy 1'
 * incomplete error handling for fetched objects that include undefined values
 * incomplete testing for the aforementioned errors
 * private methods not unit tested
+* no error handling for missing API key
 

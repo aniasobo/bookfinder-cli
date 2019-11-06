@@ -1,5 +1,5 @@
 const program = require('commander');
-const { fetchNow, addToList, printList, _getBooks, _writeLineToFile } = require('./lib/commands');
+const { fetchNow, addToList, printList } = require('./lib/commands');
 
 program.version('0.0.1').description('Command line Book finder and reading list')
 
