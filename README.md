@@ -7,11 +7,12 @@ Bookfinder is a command-line only app in JavaScript and Node that lets you searc
 * replace the KEY variable on top of the `commands.js` file 
 * install dotenv by running `$ npm install dotenv`. Create your own `.env` file in the project directory, and add your API key in the file, like so: `BOOKS_KEY=rAnDoMcHaRaCtErSoFyOuRbOoKsApIkEy`
 * add it to your bash profile as an environment variable; that way you can use it in all your projects by calling the variable from any location. In your code editor, open `~/.bash_profile` and add the API key as an environment variable: 
+
 ```
 export BOOKS_API="rAnDoMcHaRaCtErSoFyOuRbOoKsApIkEy"
 ```
           
-       
+   
 ### Download or clone this repo. 
 
 Navigate into the project directory and run `$ npm install`.
@@ -20,7 +21,7 @@ Navigate into the project directory and run `$ npm install`.
    
 ### Search for books
 
-You can use any search terms you want to find books. To find a book by title and author use `$ node index.js find '<title> <author>'`, like so:
+You can use any search terms you want to find books. For example, to find a book by title and author use `$ node index.js find '<title> <author>'`, like so:
 
 ```
 $ node index.js find 'meridian mccarthy'
@@ -56,10 +57,9 @@ $ node index.js add 'meridian mccarthy 1'
 ![bookfinder demo screenshot](bookfinder-demo.png)
 ---
 
-## Approach
+## Known issues
 
-My original plan was to use classic model-controller design with a separate UI class that would print commands available to the user to stdout.
+* incomplete error handling for fetched objects that include undefined values
+* incomplete testing for the aforementioned errors
+* private methods not unit tested
 
-However, I really wanted to try the `commander` module for this, as it seemed like a useful tool for a simple Node CLI. In retrospect, my original design would've been better in terms of ease of testing and state management. I'm also not entirely happy with the usability - the commands are quite long and clunky to type, and it's easy to make a mistake.
-
-Due to the complexity of API fetch and `fs` module mocking I haven't completed all my unit testing as I'd ran out of time, but I have a good idea for how to do this with Jest mocks.
